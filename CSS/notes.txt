@@ -1,0 +1,56 @@
+What is CSS?
+CSS is Cascading Style Sheets Language that is used to describe the visual presentation of a web page written in HTML
+
+Why Use CSS?
+1. Enhance Visual Appeal
+2. Improve USer Experience
+3. Enables Responsive Design
+4. Supports Interactivity
+5. Promotes reusability
+
+How CSS Works?
+CSS Rule Structure
+A CSS Rule has 3 parts
+selector{                                               h1{
+    property:value;                                          color: red;
+                                                             font-size: 28 px;
+}                                                       }
+selector: Targets an HTML element, a class or ID (example: head, title, body, h1, b, i )
+property: Defines the style attribute to modify (example: color, font-size, font)
+value: Specifies the setting for the property (example: red, 24 px)
+#CSS is case sensitive i.e. A!=a
+
+Types of CSS:
+1. Inline CSS: Styling inside the HTML element using style attribute
+               Example: <input type = "text" style = "{color: blue; border-radius: 5px; background-color: yellow;}"/>
+2. Internal CSS: Styling of an html element using <style> tag in the head section of html document
+               <head>
+                  <style>
+                     <input{
+                        color: blue;
+                        border-radius: 5px;
+                        background-color: yellow;
+                     }
+                  </style>
+                </head>
+                <body>
+                   <input/>
+                   <input/>
+                </body>
+3. External CSS: All the styles for the web page are stored in the file with extension .css and this file will be connected to the .html file using a <link> tag in the head section
+In .css file
+input{
+        color: blue;
+        border-radius: 5px;
+        background-color: yellow;
+}
+h1{
+    color: blue;
+    border: transparent;
+}
+In .html file
+<head>
+<link href = ".css filename along with filepath" rel = "stylesheet"/>
+</head>
+
+#Inline has highest priority then internal and then external for execution
